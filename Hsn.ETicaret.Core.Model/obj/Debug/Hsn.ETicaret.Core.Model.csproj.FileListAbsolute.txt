@@ -1,0 +1,11 @@
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\bin\Debug\Hsn.ETicaret.Core.Model.dll.config
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\bin\Debug\Hsn.ETicaret.Core.Model.dll
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\bin\Debug\Hsn.ETicaret.Core.Model.pdb
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\bin\Debug\EntityFramework.dll
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\bin\Debug\EntityFramework.xml
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\obj\Debug\Hsn.ETicaret.Core.Model.csproj.CopyComplete
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\obj\Debug\Hsn.ETicaret.Core.Model.dll
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\obj\Debug\Hsn.ETicaret.Core.Model.pdb
+C:\Users\Camus\source\repos\Hsn.ETicaret.UI\Hsn.ETicaret.Core.Model\obj\Debug\Hsn.ETicaret.Core.Model.csprojAssemblyReference.cache

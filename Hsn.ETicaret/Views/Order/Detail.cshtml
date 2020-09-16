@@ -1,0 +1,69 @@
+﻿@model Hsn.ETicaret.Core.Model.Entity.Order
+@{
+    ViewBag.Title = "Sipariş Detayı";
+}
+
+<h2>@Model.Id Nolu Siparişinizin Durumu: @Model.Status.Name</h2>
+<hr />
+<b>Banka Bilgileri</b>
+<table>
+    <tr>
+        <td>Banka</td>
+        <td>Banka İsmi</td>
+        <td>Banka</td>
+    </tr>
+    <tr>
+        <td>İban</td>
+        <td>020226656565556</td>
+    </tr>
+    <tr>
+        <td>Alıcı Adı</td>
+        <td>Firma Bilgileri</td>
+    </tr>
+</table>
+
+@{
+    if (Model.StatusId == 2)
+    {
+        <a href="/Order/Pay?id=@Model.Id" class="btn btn-success">Ödeme Yaptım</a>
+    }
+}
+
+<hr />
+<b>Sipariş Bilgileri</b>
+<table>
+    <tr>
+        <td>Toplam</td>
+        <td>@Model.TotalPrice.ToString("##,## TL")</td>
+
+    </tr>
+    <tr>
+        <td>Ürünler Toplamı</td>
+        <td>@Model.TotalProductPrice.ToString("##,## TL")</td>
+    </tr>
+    <tr>
+        <td>İndirim Toplamı</td>
+        <td>@Model.TotalDiscount.ToString("##,## TL")</td>
+    </tr>
+    <tr>
+        <td>Vergi Toplamı</td>
+        <td>@Model.TotalTaxPrice.ToString("##,## TL")</td>
+    </tr>
+</table>
+<hr />
+<b>Ürünler</b>
+<table>
+    <tr>
+        <th>Ürün</th>
+        <th>Adet</th>
+    </tr>
+    @{foreach (var item in Model.OrderProducts)
+    {
+        var p = new Hsn.ETicaret.Core.Model.HsnDb().Products.Where(x => x.Id == item.ProductId).FirstOrDefault();
+        <tr>
+            <td>@p.Name</td>
+            <td>@item.Quantity</td>
+        </tr>
+    }
+    }
+</table>

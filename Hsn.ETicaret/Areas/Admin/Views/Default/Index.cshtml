@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+    var user = Session["AdminLoginUser"] as Hsn.ETicaret.Core.Model.Entity.User;
+}
+
+<h2> Sayın @user.Name @user.LastName, Admin Sayfasına Hoşgeldiniz!</h2>
+<ul>
+    <li>
+        <a href="/Admin/Users">Membership Management</a>
+
+    </li>
+    <li>
+        <a href="/Admin/Products">Product Management</a>
+    </li>
+    <li>
+        <a href="/Admin/Categories">Category Management</a>
+    </li>
+    <li>
+        <a href="/Admin/Orders">Order Management</a>
+    </li>
+</ul>
